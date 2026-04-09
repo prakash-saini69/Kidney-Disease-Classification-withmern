@@ -158,7 +158,6 @@ ml-pipeline/**/*.pyc
 *.tsv
 *.xls
 *.xlsx
-*.json
 *.xml
 *.zip
 *.tar
