@@ -187,6 +187,8 @@ checkpoints/
 runs/
 artifacts/
 saved_models/
+!backend/src/models/
+!backend/src/models/*.js
 
 # ----------------------
 # Machine learning experiment frameworks
