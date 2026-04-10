@@ -23,6 +23,11 @@ app.use(express.json());
 app.use("/api", apiRoutes);
 app.use(errorHandler);
 
+// Root route to ensure health checks pass
+app.get("/", (req, res) => {
+  res.status(200).send("Backend is perfectly healthy!");
+});
+
 async function bootstrap() {
   await connectDB(process.env.MONGODB_URI);
   app.listen(port, () => {
